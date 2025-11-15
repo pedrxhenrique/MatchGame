@@ -15,7 +15,7 @@ Projeto desenvolvido no primeiro capítudo do livro Use a Cabeça C#, mas aprimo
 ---
 ## 📸 Screenshot
 
-![Screenshot](https://prnt.sc/mNr_5xSuT5oP)
+![Screenshot](https://github.com/pedrxhenrique/MatchGame/blob/master/images/imagem.png?raw=true)
 
 ---
 
