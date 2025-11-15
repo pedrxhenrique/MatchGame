@@ -56,19 +56,6 @@ F5
 
 ---
 
-## 📂 Estrutura do projeto
-
-```
-/MemoryGame
- ├── MainWindow.xaml
- ├── MainWindow.xaml.cs
- ├── EmojiSets.cs        (opcional, caso crie)
- ├── Assets/
- └── README.md
-```
-
----
-
 ## 🧩 Próximas melhorias (To-Do)
 
 - Adicionar sons de acerto e erro  
