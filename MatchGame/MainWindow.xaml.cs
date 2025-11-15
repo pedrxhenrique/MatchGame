@@ -43,21 +43,19 @@ namespace MatchGame
 
         private void SetUpGame()
         {
-            List<string> animalEmoji = new List<string>()
+
+            List<List<string>> listEmojis = new List<List<string>>()
             {
-                "🐂", "🐂",
-                "🐄", "🐄",
-                "🐈", "🐈",
-                "🐅", "🐅",
-                "🐆", "🐆",
-                "🐃", "🐃",
-                "🐐", "🐐",
-                "🦙", "🦙",
+                new List<string>() { "🐂","🐂","🐄","🐄","🐈","🐈","🐅","🐅","🐻","🐻","🐃","🐃","🐐","🐐","🦙","🦙" },
+                new List<string>() { "🍎","🍎","🍌","🍌","🍇","🍇","🍓","🍓","🍉","🍉","🍒","🍒","🍍","🍍","🥑","🥑" },
+                new List<string>() { "⭐","⭐","🌙","🌙","☁️","☁️","🔥","🔥","❄️","❄️","⚡","⚡","💧","💧","🌈","🌈" },
             };
 
             Random random = new Random();
 
-            foreach(TextBlock textBlock in mainGrid.Children.OfType<TextBlock>())
+            List<string> animalEmoji = listEmojis[random.Next(listEmojis.Count)].ToList();
+
+            foreach (TextBlock textBlock in mainGrid.Children.OfType<TextBlock>())
             {
                 if(textBlock.Name != "timeTextBlock")
                 {
@@ -70,6 +68,7 @@ namespace MatchGame
             }
 
             timer.Start();
+            matchesFound = 0;
             tenthsOfSecondsElapsed = 0;
             findingMatch = false;
 
