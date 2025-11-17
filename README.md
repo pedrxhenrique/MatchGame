@@ -11,7 +11,8 @@ Projeto desenvolvido no primeiro capítudo do livro Use a Cabeça C#, mas aprimo
 - 🎨 Conjuntos variados de emojis em cada partida  
 - ⏱ Contagem de tempo  
 - 🎮 Botão **Play Again** para reiniciar o jogo
-
+- 🔈Adicionado sons de erro e acerto
+  
 ---
 ## 📸 Screenshot
 
@@ -58,7 +59,6 @@ F5
 
 ## 🧩 Próximas melhorias (To-Do)
 
-- Adicionar sons de acerto e erro  
 - Criar modo difícil  
 - Salvar recordes  
 - Interface mais moderna  
