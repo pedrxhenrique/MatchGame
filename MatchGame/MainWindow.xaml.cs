@@ -91,11 +91,13 @@ namespace MatchGame
                 matchesFound++;
                 textBlock.Visibility = Visibility.Hidden;
                 findingMatch = false;
+                PlayCorrectSound();
             }
             else
             {
                 lastTextBlockClicked.Visibility = Visibility.Visible;
                 findingMatch = false;
+                PlayWrongSound();
             }
         }
 
@@ -105,6 +107,16 @@ namespace MatchGame
             {
                 SetUpGame();
             }
+        }
+
+        private void PlayCorrectSound()
+        {
+            System.Media.SystemSounds.Hand.Play();
+        }
+
+        private void PlayWrongSound()
+        {
+            System.Media.SystemSounds.Question.Play();
         }
     }
 }
